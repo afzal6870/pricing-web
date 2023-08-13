@@ -1,0 +1,691 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font-family: "Raleway", sans-serif;
+}
+.navbar #menu-icon {
+  display: none;
+}
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 7PX;
+  justify-content: flex-end;
+}
+.navbar ul .active > a {
+  color: black;
+}
+.navbar ul li {
+  padding: 15px 25px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navbar ul li .logo {
+  display: flex;
+  justify-content: flex-start;
+}
+.navbar ul li:hover {
+  background-color: rgb(172, 172, 172);
+}
+.navbar ul li:hover > a {
+  color: black;
+}
+.navbar ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.header {
+  position: relative;
+}
+.header #menu-icon {
+  width: 55px;
+  position: absolute;
+  top: 40px;
+  left: 20px;
+}
+.header .background-image {
+  background-image: url("../images/mac.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 300px 0px 0px 0px;
+}
+.header .background-image .header-content {
+  padding-left: 40px;
+}
+.header .background-image .header {
+  line-height: 3;
+}
+.header .background-image .heading {
+  color: white;
+  font-size: 64px;
+  font-weight: lighter;
+}
+.header .background-image p {
+  color: white;
+  font-size: 18px;
+  margin-top: 50px;
+}
+.header .background-image .button-header {
+  font-size: 18px;
+  padding: 12px 24px;
+  margin-top: 50px;
+  background-color: rgb(172, 172, 172);
+  border: none;
+}
+.header .background-image .button-header:hover {
+  background-color: #ddd;
+}
+.header .background-image i {
+  transition: 0.4s;
+  font-size: 20px;
+  color: #757575;
+  padding-top: 250px;
+  padding-bottom: 100px;
+}
+.header .background-image i:hover {
+  transition: 0.4s;
+  font-size: 25px;
+  color: #ddd;
+}
+
+.about {
+  padding: 128px 16px;
+  text-align: center;
+}
+.about h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+}
+.about p {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+.about .parent-div {
+  display: flex;
+  gap: 30px;
+}
+.about .parent-div .about-data {
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 39px;
+}
+.about .parent-div .about-data i {
+  align-items: center;
+  font-size: 64px;
+}
+.about .parent-div .about-data h4 {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+.phone-building {
+  display: flex;
+  gap: 50px;
+  background-color: #f1f1f1;
+  padding: 128px 20px;
+}
+.phone-building .phone-building-data {
+  flex-basis: 50%;
+}
+.phone-building .phone-building-data h2 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+.phone-building .phone-building-data p {
+  font-size: 15px;
+  margin: 15px 0px;
+}
+.phone-building .phone-building-data .overview {
+  padding: 8px 16px;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.team {
+  padding: 128px 20px;
+}
+.team h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  text-align: center;
+}
+.team p {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+.team .parent-div {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.team .parent-div .team-data {
+  flex-basis: 24%;
+  flex-wrap: wrap;
+  gap: 39px;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 30px 0px;
+}
+.team .parent-div .team-data img {
+  max-width: 430px;
+}
+.team .parent-div .team-data h4 {
+  margin: 18px 0px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.team .parent-div .team-data p {
+  padding-left: 10px;
+}
+.team .parent-div .team-data .contact {
+  padding: 15px 0px;
+  border: none;
+  width: 100%;
+}
+.team .parent-div .team-data .contact i {
+  margin-right: 10px;
+}
+.team .parent-div .team-data .contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.review {
+  padding: 64px 20px;
+  text-align: center;
+}
+.review .parent-div {
+  display: flex;
+}
+.review .parent-div .review-data {
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  background-color: #616161;
+  padding: 64px 0px;
+  color: white;
+}
+.review .parent-div .review-data h2 {
+  margin: 18px 0px;
+  font-size: 36px;
+  font-weight: lighter;
+}
+.review .parent-div .review-data p {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.work {
+  padding: 128px 16px;
+  text-align: center;
+}
+.work h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+}
+.work p {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+.work .parent-div {
+  display: flex;
+  gap: 7.5px;
+  flex-wrap: wrap;
+}
+.work .parent-div:hover {
+  background-color: #fff;
+}
+.work .parent-div .work-data {
+  flex-basis: 25%;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.skills {
+  display: flex;
+  gap: 50px;
+  background-color: #f1f1f1;
+  padding: 64px 20px;
+}
+.skills .skills-data {
+  flex-basis: 50%;
+}
+.skills .skills-data .photography {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.skills .skills-data .photography i {
+  font-size: 15px;
+  margin: 15px 0px;
+}
+.skills .skills-data .photography p {
+  font-size: 15px;
+  margin: 15px 0px;
+  letter-spacing: 6px;
+}
+.skills .skills-data .outer {
+  background-color: #9e9e9e;
+  min-height: 30px;
+}
+.skills .skills-data .outer .inner {
+  background-color: #616161;
+  height: 30px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.skills .skills-data .outer .inner p {
+  color: white;
+  text-align: center;
+}
+.skills .skills-data h2 {
+  font-size: 24px;
+  font-weight: lighter;
+}
+.skills .skills-data p {
+  font-size: 15px;
+  margin: 15px 0px;
+}
+
+.pricing-section {
+  padding: 128px 20px;
+  background-color: #616161;
+}
+.pricing-section h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+  text-align: center;
+  color: white;
+  font-weight: lighter;
+}
+.pricing-section p {
+  margin: 18px 0px;
+  font-size: 18px;
+  color: white;
+}
+.pricing-section .parent-div {
+  display: flex;
+  gap: 21px;
+}
+.pricing-section .parent-div .pricing-data {
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .card-header h2 {
+  padding: 32px 16px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .card-content p {
+  padding: 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .card-content .amount p {
+  padding: 16px;
+  font-size: 15px;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .button-signup {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 24px 16px;
+  background-color: #f1f1f1;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .button-signup .signup {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
+.pricing-section .parent-div .pricing-data .card-container-basic .button-signup .signup:hover {
+  background-color: rgb(172, 172, 172);
+  color: black;
+  border: none;
+}
+.pricing-section .parent-div {
+  display: flex;
+  gap: 21px;
+  align-items: baseline;
+}
+.pricing-section .parent-div .pricing-data {
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .card-header h2 {
+  padding: 32px 16px;
+  background-color: #f44336;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+  padding: 64px 0px;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .card-content p {
+  padding: 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .card-content .amount p {
+  padding: 16px;
+  font-size: 15px;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .button-signup {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 24px 16px;
+  background-color: #f1f1f1;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .button-signup .signup {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
+.pricing-section .parent-div .pricing-data .card-container-pro .button-signup .signup:hover {
+  background-color: rgb(172, 172, 172);
+  color: black;
+  border: none;
+}
+.pricing-section .parent-div {
+  display: flex;
+  gap: 21px;
+}
+.pricing-section .parent-div .pricing-data {
+  flex-basis: 33.33%;
+  flex-wrap: wrap;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .card-header h2 {
+  padding: 32px 16px;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  font-weight: lighter;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .card-content p {
+  padding: 16px;
+  font-size: 15px;
+  border-bottom: 1px solid #ddd;
+  color: black;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .card-content .amount p {
+  padding: 16px;
+  font-size: 15px;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .button-signup {
+  text-decoration: none;
+  border-bottom: none;
+  padding: 24px 16px;
+  background-color: #f1f1f1;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .button-signup .signup {
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  padding: 12px 24px;
+}
+.pricing-section .parent-div .pricing-data .card-container-premium .button-signup .signup:hover {
+  background-color: rgb(172, 172, 172);
+  color: black;
+  border: none;
+}
+
+.contact-details {
+  padding: 128px 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.contact-details h3 {
+  margin: 10px 0px;
+  font-size: 24px;
+}
+.contact-details p {
+  margin: 18px 0px;
+  font-size: 18px;
+}
+.contact-details .parent-div {
+  display: block;
+  text-align: left;
+}
+.contact-details .parent-div .location-phone-mail {
+  font-size: 15px;
+  margin: 15px 0px;
+  line-height: 1.8;
+}
+.contact-details .parent-div .location-phone-mail i {
+  margin-right: 30px;
+  font-size: 36px;
+}
+.contact-details .parent-div .form-container {
+  width: 100% px;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding-top: 70px;
+}
+.contact-details .parent-div .form-field {
+  margin-bottom: 15px;
+}
+.contact-details .parent-div .form-label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-details .parent-div .form-input {
+  width: 100%;
+  padding: 8px 0px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contact-details .parent-div .form-submit {
+  background-color: black;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.contact-details .parent-div .form-submit:hover {
+  background-color: rgb(172, 172, 172);
+  color: black;
+  border: none;
+}
+.contact-details .parent-div .form-submit i {
+  margin-right: 10px;
+}
+.contact-details .map {
+  margin: 48px 0px;
+}
+.contact-details .map img {
+  width: 100%;
+}
+
+.footer {
+  line-height: 4;
+  text-align: center;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+}
+.footer .social-icons i {
+  transition: 0.4s;
+  padding: 3px;
+  font-size: 25px;
+}
+.footer .social-icons i:hover {
+  transition: 0.4s;
+  font-size: 30px;
+  color: rgb(172, 172, 172);
+}
+.footer .top {
+  padding: 8px 16px;
+  color: black;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 15px;
+}
+.footer .top i {
+  margin-right: 10px;
+}
+.footer .top:hover {
+  background-color: #fff;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .parent-div {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .about .parent-div .about-data {
+    flex-basis: 45%;
+  }
+  .phone-building {
+    flex-wrap: wrap;
+  }
+  .phone-building .phone-building-data {
+    flex-basis: 100%;
+  }
+  .phone-building .phone-building-data .building-img {
+    width: 100%;
+  }
+  .team .parent-div {
+    flex-wrap: wrap;
+  }
+  .team .parent-div .team-data {
+    flex-basis: 100%;
+  }
+  .team .parent-div .team-data img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .work .parent-div {
+    justify-content: center;
+  }
+  .work .parent-div .work-data {
+    flex-basis: 45%;
+  }
+  .work .parent-div .work-data img {
+    width: 100%;
+  }
+  .skills {
+    flex-wrap: wrap;
+  }
+  .skills .skills-data {
+    flex-basis: 100%;
+  }
+  .pricing-section .parent-div {
+    flex-wrap: wrap;
+  }
+  .pricing-section .parent-div .pricing-data {
+    flex-basis: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .navbar .hamber {
+    padding: 10px;
+    background: black;
+  }
+  .navbar .hamber #menu-icon {
+    display: block;
+    width: 50px;
+    margin-left: 10px;
+  }
+  .navbar #navbar-links {
+    display: none;
+  }
+  .navbar .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+  }
+  .navbar .nav-links.active li {
+    padding: 10px 0;
+  }
+  .header .background-image {
+    padding: 150px 0px 0px 0px;
+    background-position: center;
+  }
+  .header .background-image .header-content h1 {
+    font-size: 35px;
+  }
+  .header .background-image .header-content p {
+    font-size: 14px;
+  }
+  .header .background-image .header-content button {
+    font-size: 15px;
+  }
+  .header .background-image .header-content .social-icons {
+    padding-top: 85px;
+    padding-bottom: 40px;
+  }
+  .header .background-image .header-content .social-icons i {
+    padding: 0;
+  }
+  .about .parent-div .about-data {
+    flex-basis: 100%;
+  }
+  .work .parent-div .work-data {
+    flex-basis: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
